@@ -1,0 +1,145 @@
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fontPrincipal: 'Inter';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--branco-principal);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fontPrincipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+
+}
+
+.containerBotao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botaoSecundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.containerAviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.containerTitulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.containerImagem{
+    margin: 1em 0 2em 0;
+}
+
+.containerCaixa{
+    margin: 0 6em;
+}
+
+.secundarioImagem{
+    width: 50%;
+}
+
+.secundario{
+    display: flex;
+    align-items: center;
+    margin: 0 10em;
+    gap: 5em;
+}
+
+.descricaoTitulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricaoTexto{
+    color: var(--cinza-secundario);
+}
+
+.secundarioBotao{
+    display: inline-block;
+    margin: 1em;
+
+}
+
+.containerDescricao{
+    padding: 2em;
+}
+
+.dispositivosLista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivosTitulo{
+    font-size: 48px;
+}
+
+.listaItem{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodapelista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.listaItem a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+    font-size: 16px;
+}
+
+.rodapeTexto{
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.listaItem a:hover{
+    color: var(--botao-azul);
+}
